@@ -37,12 +37,12 @@ def main():
     user=api.get_user
     
     print(user.__str__)
-    # since_id = 1
-    # while True:
-    #     since_id = check_mentions(api, ["help", "support"], since_id)
-    #     logger.info("Waiting...")
-    #     time.sleep(60)
-    # mentions = api.get_users_mentions("@itsuv")
-    # print(mentions)
+    since_id = 1
+    while True:
+        since_id = check_mentions(api, ["help", "support"], since_id)
+        logger.info("Waiting...")
+        time.sleep(60)
+    mentions = api.get_users_mentions("@itsuv")
+    print(mentions)
 if __name__ == "__main__":
     main()
