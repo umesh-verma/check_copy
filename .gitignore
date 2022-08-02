@@ -1,3 +1,4 @@
 config.py
 *.cnf
 *.pyc
+twitter/__pycache__/config.cpython-310.pyc
